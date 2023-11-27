@@ -1,0 +1,53 @@
+header {
+    font-family: 'Arial', sans-serif; 
+    font-size: 20px; 
+    font-weight: normal; 
+}
+
+.nav-link {
+    color: #3366cc; 
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #ff6600;
+}
+
+section {
+    margin: 20px;
+    padding: 10px; 
+    border: 5px solid #999; 
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 18px;
+    }
+    section {
+        margin: 10px; 
+        padding: 5px;
+    }
+}
+@media print {
+    body {
+        font-family: 'Times New Roman', serif; 
+        line-height: 1.5; 
+    }
+
+    section {
+        page-break-inside: avoid; 
+        margin-bottom: 20px; 
+    }
+
+    img {
+        max-width: 100%;
+        height: auto; 
+    }
+
+    a {
+        display: none; 
+    }
+    #services{
+        display: none;
+    }
+}
